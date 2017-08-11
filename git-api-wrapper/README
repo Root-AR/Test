@@ -1,0 +1,26 @@
+Steps :
+
+1. run npm install 
+2. CONFIG -> git-apis.js -> 
+		example 
+
+		Go to GITHUB and generate token manually or You can also use authorization API to generate token 
+
+		var apis   =  { 
+			'baseUrl' : 'https://api.github.com/',
+			'users' : 'users/',
+			'repos' : 'repos/',
+			'header' : {
+				'Authorization' : 'token 7198d16671dfc2ad0511b89fe96834c05222dca7',
+				'Accept': 'application/json', 
+				'Content-Type': 'application/json',
+				'user-agent': 'node.js'
+			}
+		}
+
+3. run node server.js
+
+4. http://localhost:7000/git/users/Root-AR?sort=full_name. // TO get user (Root-AR) repo
+
+5. http://localhost:7000/git/contributers/Root-AR/DS.  // TO get contributer for (ROOT-AR) for DS repo.
+
