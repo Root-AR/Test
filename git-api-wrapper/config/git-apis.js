@@ -3,7 +3,7 @@ var apis   =  {
 	'users' : 'users/',
 	'repos' : 'repos/',
 	'header' : {
-		'Authorization' : 'token 7198d16671dfc2ad0511b89fe96834c05222dca7',
+		'Authorization' : 'token YOurToken',
 		'Accept': 'application/json', 
 		'Content-Type': 'application/json',
 		'user-agent': 'node.js'
