@@ -7,7 +7,7 @@ var apis   =  {
       "public_repo"
     ],
 	'header' : {
-		'Authorization' : 'token 6e2c0f2858b5762edcde0f9ae1702fdbc112552f',
+		'Authorization' : 'token YOUR TOKEN',
 		'Accept': 'application/json', 
 		'Content-Type': 'application/json',
 		'user-agent': 'node.js'
