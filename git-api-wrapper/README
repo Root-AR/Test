@@ -7,15 +7,16 @@ Steps :
 	Go to GITHUB -> Create application and generate token manually or You can also use authorization API to generate token 
 
 		var apis   =  { 
-			'baseUrl' : 'https://api.github.com/',
-			'users' : 'users/',
-			'repos' : 'repos/',
+			....
+
 			'header' : {
-				'Authorization' : 'token YourTOKEN’,
+				'Authorization' : 'token YourTOKEN’, //PLEASE PROVIDE YOUR TOKEN
 				'Accept': 'application/json', 
 				'Content-Type': 'application/json',
 				'user-agent': 'node.js'
 			}
+
+			.....
 		}
 
 3. run node server.js
