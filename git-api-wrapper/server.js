@@ -15,6 +15,8 @@ router.route('/users/:owner')
 	
 	var url = config.getUsersApiUrl (req.params.owner , req.query.sortBy);
 	
+	config.setTokenInHeader(req.headers.token);
+	
 	var headers = config.getHeader();
 	
 	restConfig.get( url, headers )
@@ -31,6 +33,8 @@ router.route('/contributers/:owner/:repo')
 
 	var url =  config.getUserRepoApiUrl (req.params.owner , req.params.repo);
 	
+	config.setTokenInHeader(req.headers.token);
+
 	var headers = config.getHeader();
 	
 	restConfig.get( url, headers )
