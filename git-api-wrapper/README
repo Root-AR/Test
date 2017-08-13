@@ -21,7 +21,7 @@ Steps :
 
 3. run node server.js
 
-4. http://localhost:7000/git/users/Root-AR?sortBy=full_name. // TO get user (Root-AR) repo
+4. http://localhost:7000/git/users/<OwnerName>?sortBy=full_name. // TO get user (Root-AR) repo
 
-5. http://localhost:7000/git/contributers/Root-AR/DS.  // TO get contributer for (ROOT-AR) for DS repo.
+5. http://localhost:7000/git/contributers/<OwnerName>/<RepoName>.  // TO get contributer for (ROOT-AR) for DS repo.
 
