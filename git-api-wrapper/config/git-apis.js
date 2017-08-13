@@ -6,14 +6,16 @@ var apis   =  {
 	"scopes": [
       "public_repo"
     ],
-	'header' : {
-		'Authorization' : 'token YOUR TOKEN',
+	'headers' : {
 		'Accept': 'application/json', 
 		'Content-Type': 'application/json',
 		'user-agent': 'node.js'
 	},
 	getHeader : function () {
-		return this.header;
+		return this.headers;
+	},
+	setTokenInHeader : function (token) {
+		this.headers.Authorization = 'token '+token;
 	},
 	getUsersApiUrl : function ( owner , queryParamField)  {
 		var url = this.baseUrl  + this.users + owner + '/repos?sort='+queryParamField;
