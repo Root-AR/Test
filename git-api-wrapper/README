@@ -1,23 +1,9 @@
 Steps :
 
 1. run npm install 
-2. go to config folder -> git-apis.js -> 
-		example 
-
-	Go to GITHUB -> Create application and generate token manually or You can also use authorization API to generate token 
-
-		var apis   =  { 
-			....
-
-			'header' : {
-				'Authorization' : 'token YourTOKEN’, //PLEASE PROVIDE YOUR TOKEN
-				'Accept': 'application/json', 
-				'Content-Type': 'application/json',
-				'user-agent': 'node.js'
-			}
-
-			.....
-		}
+2. Go to GITHUB -> Create application and generate token manually or You can also use authorization API to generate token 
+	While calling api please provide token in Http header :
+	example : token : 'YOUR TOKEN'
 
 3. run node server.js
 
